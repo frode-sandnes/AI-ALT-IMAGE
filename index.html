@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<! -- By Frode Eika Sandnes, Oslo Metropolitan University, Oslo, Norway, July 2021 -->
+
+<head>
+    <meta charset="utf-8">
+    <title>ALT-TEXT: prioritizing image alternative texts on the web</title>
+</head>
+
+<!-- Load TensorFlow.js. This is required to use MobileNet. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+<!-- Load the MobileNet model. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+<!-- Frode's library. -->
+<script src="deep-alt-text.js" defer></script>
+
+
+<html>
+	<body>
+		<h1>Images without alt-texts</h1>
+
+		<p>An example demonstrating the addition of artificially generated alternative texts for images in web documents using TensorFlow.js by Frode Eika Sandnes, aug. 2021.</p>
+
+		<p>Run via (live) server to avoid CORS errors. Then inspect the modified alt-attributes of the image elements (e.g. using developer tools in Chrome).</p>
+
+		<img src="sykkel.jpg" width = "25%"><br>
+		<img src="stol.jpg" width = "25%"><br>
+		<img src="kake.jpg" width = "25%"><br>
+		<img src="hus.jpg" width = "25%"><br>
+		
+	</body>
+</html>
