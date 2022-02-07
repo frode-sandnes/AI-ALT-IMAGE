@@ -37,7 +37,7 @@ async function findArtificialAlt(img)
 			artificialText += o.className+", or ";	
 			}	
 		}
-//	console.log(predictions);
+	console.log(predictions);
 	return artificialText;
 	}
 
